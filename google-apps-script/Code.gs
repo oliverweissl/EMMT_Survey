@@ -18,16 +18,21 @@ function doPost(e) {
     const raw = e && e.postData && e.postData.contents
       ? e.postData.contents
       : (e && e.parameter && e.parameter.payload ? e.parameter.payload : '{}');
-    const data = JSON.parse(raw);
-    sheet.appendRow([
-      data.annotator_id || '', data.session_id || '', data.task_index || '',
-      data.category || '', data.method || '', data.variant || '', data.filename || '',
-      data.label || '', data.label_index || '', data.total_labels || '',
-      data.response_type || '', data.reject_reason || '', data.bboxes || '[]',
-      data.num_bboxes || 0, data.image_width || '', data.image_height || '',
-      data.timestamp || '', new Date().toISOString()
-    ]);
-    return ContentService.createTextOutput(JSON.stringify({ok: true}))
+    const parsed = JSON.parse(raw);
+    const records = Array.isArray(parsed.responses) ? parsed.responses : [parsed];
+    const receivedAt = new Date().toISOString();
+    const rows = records.map(function(data) {
+      return [
+        data.annotator_id || '', data.session_id || '', data.task_index || '',
+        data.category || '', data.method || '', data.variant || '', data.filename || '',
+        data.label || '', data.label_index || '', data.total_labels || '',
+        data.response_type || '', data.reject_reason || '', data.bboxes || '[]',
+        data.num_bboxes || 0, data.image_width || '', data.image_height || '',
+        data.timestamp || '', receivedAt
+      ];
+    });
+    if (rows.length) sheet.getRange(sheet.getLastRow() + 1, 1, rows.length, headers.length).setValues(rows);
+    return ContentService.createTextOutput(JSON.stringify({ok: true, received: rows.length}))
       .setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
     return ContentService.createTextOutput(JSON.stringify({ok: false, error: String(error)}))

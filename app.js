@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzBUD3WYhiZFFJo9eqB_370FuSY4o4Hs3f_1Zin7SmxHYudU9mq1O15wfvlWOmPWRlR/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbws04TO2aHPf0ZYh_h3gJkDtJq2SptiJvNXxMSXWecg3dPntbWb__CipklOlnXe6ukg/exec';
 const app = document.querySelector('#app');
 const params = new URLSearchParams(location.search);
 const variant = params.get('variant');
@@ -6,6 +6,15 @@ const sessionId = (crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Ma
 let workerId = '';
 let sequence = [];
 let position = 0;
+let pendingResponses = [];
+let uploadComplete = false;
+
+window.addEventListener('beforeunload', event => {
+  if (workerId && !uploadComplete) {
+    event.preventDefault();
+    event.returnValue = 'Your responses are not uploaded yet. Please stay on this page.';
+  }
+});
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const rootPath = path => new URL(path, document.baseURI).href;
@@ -40,7 +49,7 @@ function intro() {
   document.querySelector('#start').onclick = () => {
     workerId = document.querySelector('#worker-id').value.trim();
     if (!workerId) return (document.querySelector('#message').textContent = 'Worker ID is required.');
-    position = 0; showCurrent();
+    position = 0; pendingResponses = []; uploadComplete = false; showCurrent();
   };
 }
 
@@ -78,13 +87,26 @@ function setupCanvas(image, item) {
 }
 function currentBoxes() { return boxes.map(b => [Math.round(b.x), Math.round(b.y), Math.round(b.x+b.w), Math.round(b.y+b.h)]); }
 async function submitAnnotation(item, type, reason, taskBoxes) {
-  const message = document.querySelector('#message'); message.textContent = 'Submitting…';
+  const message = document.querySelector('#message'); message.textContent = 'Saved for final submission.';
   document.querySelectorAll('button').forEach(b => b.disabled = true);
   const payload = {...basePayload(item, position), response_type:type, reject_reason:reason, bboxes:JSON.stringify(item.attention ? {expected:'unclear_image', selected:reason, correct:reason === 'unclear_image'} : taskBoxes), num_bboxes:taskBoxes.length, image_width:document.querySelector('#image').naturalWidth, image_height:document.querySelector('#image').naturalHeight};
-  try { await send(payload); position++; boxes = []; showCurrent(); } catch (error) { message.textContent = 'Submission failed. Please try again.'; document.querySelectorAll('button').forEach(b => b.disabled = false); }
+  pendingResponses.push(payload);
+  position++; boxes = []; showCurrent();
 }
 
-function finish() { app.innerHTML = '<section class="end"><h1>Thank you</h1><p>Your responses have been recorded.</p></section>'; }
+async function finish() {
+  document.title = 'Uploading responses…';
+  app.innerHTML = `<section class="end"><h1>Please keep this page open</h1><p>Uploading all ${pendingResponses.length} responses now.</p><p><strong>Do not close this page, refresh it, or navigate away until the upload is complete.</strong></p><p class="message" id="message">Uploading…</p></section>`;
+  try {
+    await send({batch: true, responses: pendingResponses});
+    uploadComplete = true;
+    document.title = 'Image annotation study';
+    app.innerHTML = '<section class="end"><h1>Thank you</h1><p>Your responses have been recorded.</p></section>';
+  } catch (error) {
+    app.innerHTML = '<section class="end"><h1>Submission problem</h1><p>Your responses could not be sent. Please keep this page open and try again.</p><button id="retry">Retry submission</button><p class="message" id="message"></p></section>';
+    document.querySelector('#retry').onclick = finish;
+  }
+}
 
 async function start() {
   if (!['1','2','3'].includes(variant)) throw new Error('Use this survey with ?variant=1, ?variant=2, or ?variant=3.');
