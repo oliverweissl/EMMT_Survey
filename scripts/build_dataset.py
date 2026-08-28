@@ -18,6 +18,11 @@ def read_json(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def participant_prompt(prompt):
+    """Keep the task instruction, but remove machine-output formatting instructions."""
+    return prompt.split("Return ONLY a JSON array", 1)[0].strip().rstrip("—-: ")
+
+
 def main():
     manifest = read_json(SAMPLES / "manifest.json")
     cases = []
@@ -41,8 +46,8 @@ def main():
             "scene_type": metadata["scene_type"],
             "category": source.get("category", metadata["scene_type"]),
             "filename": source.get("filename", ""),
-            "prompt": vlm["perturbed_prompt"],
-            "clean_prompt": result.get("original_prompt", ""),
+            "prompt": participant_prompt(vlm["perturbed_prompt"]),
+            "clean_prompt": participant_prompt(result.get("original_prompt", "")),
             "labels": prompt_objects,
             "adversarial_source": adversarial,
             "clean_source": clean,

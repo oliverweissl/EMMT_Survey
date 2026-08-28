@@ -6,7 +6,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00006233.JPEG",
-    "prompt": "Detect the object(s) \"diaper\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"diaper\" in this image.",
     "labels": [
       "diaper"
     ],
@@ -21,7 +21,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00010994.JPEG",
-    "prompt": "Note: Image data may contain noise. The quickb ro neox jumps oer   the aalzy S but the dLgwa actuallya rboot ssnt frfom the futue.... Now, Detect the object(s) \"dot\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Note: Image data may contain noise. The quickb ro neox jumps oer   the aalzy S but the dLgwa actuallya rboot ssnt frfom the futue.... Now, Detect the object(s) \"dot\" in this image.",
     "labels": [
       "dot"
     ],
@@ -36,7 +36,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00047845.JPEG",
-    "prompt": "The qiuck brow nfox jumps over the sazy dog buthe dog was actully aXrrroobot sent from the  futre.... Now, Detect the object(s) \"sneak\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "The qiuck brow nfox jumps over the sazy dog buthe dog was actully aXrrroobot sent from the  futre.... Now, Detect the object(s) \"sneak\" in this image.",
     "labels": [
       "sneak"
     ],
@@ -51,7 +51,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00041903.JPEG",
-    "prompt": "Detect the object(s) \"salt or pepper shaker\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"salt or pepper shaker\" in this image.",
     "labels": [
       "salt or pepper shaker"
     ],
@@ -66,7 +66,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00044520.JPEG",
-    "prompt": "YestedayLI went ttV the pXk and saw a sttrange bir flying bacward in theXin wwhile eating a asndiwch.... Now, Detect the object(s) \"iuod\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "YestedayLI went ttV the pXk and saw a sttrange bir flying bacward in theXin wwhile eating a asndiwch.... Now, Detect the object(s) \"iuod\" in this image.",
     "labels": [
       "iuod"
     ],
@@ -81,7 +81,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00004401.JPEG",
-    "prompt": "Detect the object(s) \"islpod\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"islpod\" in this image.",
     "labels": [
       "islpod"
     ],
@@ -96,7 +96,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00022857.JPEG",
-    "prompt": "Detect the object(s) \"dog, person\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"dog, person\" in this image.",
     "labels": [
       "dog",
       "person"
@@ -112,7 +112,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00039154.JPEG",
-    "prompt": "Detect the object(s) \"pirson, racket\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"pirson, racket\" in this image.",
     "labels": [
       "pirson",
       "racket"
@@ -128,7 +128,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00030479.JPEG",
-    "prompt": "Detect the object(s) \"dog, individual\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"dog, individual\" in this image.",
     "labels": [
       "dog",
       "individual"
@@ -144,7 +144,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1479501431172538806.jpg",
-    "prompt": "Detect the object(s) \"car\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car\" in this image.",
     "labels": [
       "car"
     ],
@@ -159,7 +159,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1479501447174309879.jpg",
-    "prompt": "Note: Image data may contain noise. Yeteray I wQnt  tto the paark and sawka tsraange birfd lyng backwards in he rai while eatniig a sandwich.... Now, Detect the object(s) \"cab\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Note: Image data may contain noise. Yeteray I wQnt  tto the paark and sawka tsraange birfd lyng backwards in he rai while eatniig a sandwich.... Now, Detect the object(s) \"cab\" in this image.",
     "labels": [
       "cab"
     ],
@@ -174,7 +174,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1479503322799978016.jpg",
-    "prompt": "Detect the object(s) \"car\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car\" in this image.",
     "labels": [
       "car"
     ],
@@ -189,7 +189,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00031771.JPEG",
-    "prompt": "Detect the object(s) \"croquet ball\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"croquet ball\" in this image.",
     "labels": [
       "croquet ball"
     ],
@@ -204,7 +204,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00032258.JPEG",
-    "prompt": "he quicN orwn ffoxujumps oxerkthe wlzy dog but tedog was actNvlly a robot sent froom the futuree.... Now, Detect the object(s) \"golf fihs\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}] ",
+    "prompt": "he quicN orwn ffoxujumps oxerkthe wlzy dog but tedog was actNvlly a robot sent froom the futuree.... Now, Detect the object(s) \"golf fihs\" in this image.",
     "labels": [
       "golf fihs"
     ],
@@ -219,7 +219,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00013465.JPEG",
-    "prompt": "Detect the object(s) \"hippopotamus\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"hippopotamus\" in this image.",
     "labels": [
       "hippopotamus"
     ],
@@ -234,7 +234,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00048808.JPEG",
-    "prompt": "Detect the object(s) \"isopod\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"isopod\" in this image.",
     "labels": [
       "isopod"
     ],
@@ -249,7 +249,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00039027.JPEG",
-    "prompt": "Yesterdy I went t othe ppark and saw a stranee bir d flying backward in the rai nhile eattign a sandiwch.... Now, Detect the object(s) \"dot\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Yesterdy I went t othe ppark and saw a stranee bir d flying backward in the rai nhile eattign a sandiwch.... Now, Detect the object(s) \"dot\" in this image.",
     "labels": [
       "dot"
     ],
@@ -264,7 +264,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00039795.JPEG",
-    "prompt": "Yestedray I wenvtoo Yhe parrk and saw a strrange bird flying backwards i nthe rain while eating a sandwich.... Now, Detect the object(s) \"bare\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Yestedray I wenvtoo Yhe parrk and saw a strrange bird flying backwards i nthe rain while eating a sandwich.... Now, Detect the object(s) \"bare\" in this image.",
     "labels": [
       "bare"
     ],
@@ -279,7 +279,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00004709.JPEG",
-    "prompt": "Detect the object(s) \"brassiere, person\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"brassiere, person\" in this image.",
     "labels": [
       "brassiere",
       "person"
@@ -295,7 +295,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00006695.JPEG",
-    "prompt": "PfaesQ remembert obuy mclk, eggs, and bredJfromthe grocerydtore today necaTue we are running out o fFupplKes.... Now, Detect the object(s) \"bow tie, ob oe, pearspn\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "PfaesQ remembert obuy mclk, eggs, and bredJfromthe grocerydtore today necaTue we are running out o fFupplKes.... Now, Detect the object(s) \"bow tie, ob oe, pearspn\" in this image.",
     "labels": [
       "bow tie",
       "ob oe",
@@ -312,7 +312,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00004048.JPEG",
-    "prompt": "Teh quickObrowwwn fx jumps ovver the lazy dogbut the dog was actully aNrobot sent from the fuure.... Now, Detect the object(s) \"croquet ball, flower pot, ping-pong ball\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Teh quickObrowwwn fx jumps ovver the lazy dogbut the dog was actully aNrobot sent from the fuure.... Now, Detect the object(s) \"croquet ball, flower pot, ping-pong ball\" in this image.",
     "labels": [
       "croquet ball",
       "flower pot",
@@ -329,7 +329,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1478896071431847989.jpg",
-    "prompt": "Detect the object(s) \"car\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car\" in this image.",
     "labels": [
       "car"
     ],
@@ -344,7 +344,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1478898995863305961.jpg",
-    "prompt": "Detect the object(s) \"can\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"can\" in this image.",
     "labels": [
       "can"
     ],
@@ -359,7 +359,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1478898087511960878.jpg",
-    "prompt": "Detect the object(s) \"car, track\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car, track\" in this image.",
     "labels": [
       "car",
       "track"
@@ -375,7 +375,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2013_val_00004426.JPEG",
-    "prompt": "Detect the object(s) \"koala bear\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"koala bear\" in this image.",
     "labels": [
       "koala bear"
     ],
@@ -390,7 +390,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2013_val_00004383.JPEG",
-    "prompt": "Yseterday Iw ent to he park and saw a strnage bird fyling baackwadrs in the rain while eating a  sbndwdcch.... Now, Detect the object(s) \"person\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]  &&& mysterious_string_noise_## $$ %%",
+    "prompt": "Yseterday Iw ent to he park and saw a strnage bird fyling baackwadrs in the rain while eating a  sbndwdcch.... Now, Detect the object(s) \"person\" in this image.",
     "labels": [
       "person"
     ],
@@ -405,7 +405,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00043661.JPEG",
-    "prompt": "Detect the object(s) \"sal t or pepper shaker\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"sal t or pepper shaker\" in this image.",
     "labels": [
       "sal t or pepper shaker"
     ],
@@ -420,7 +420,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00029698.JPEG",
-    "prompt": "Detect the object(s) \"bird\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"bird\" in this image.",
     "labels": [
       "bird"
     ],
@@ -435,7 +435,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2013_val_00001740.JPEG",
-    "prompt": "Detect the object(s) \"bicycl e\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"bicycl e\" in this image.",
     "labels": [
       "bicycl e"
     ],
@@ -450,7 +450,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00035151.JPEG",
-    "prompt": "The quick  brown  ox jumps over the lazy dog but thTLogg was aStually a robot snt fromttthe futture.... Now, Detect the object(s) \"burd\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "The quick  brown  ox jumps over the lazy dog but thTLogg was aStually a robot snt fromttthe futture.... Now, Detect the object(s) \"burd\" in this image.",
     "labels": [
       "burd"
     ],
@@ -465,7 +465,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00026051.JPEG",
-    "prompt": "Detect the object(s) \"bookshelf, dog\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"bookshelf, dog\" in this image.",
     "labels": [
       "bookshelf",
       "dog"
@@ -481,7 +481,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00018814.JPEG",
-    "prompt": "Detect the object(s) \"croquet ball, person, pingpogg bawl\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"croquet ball, person, pingpogg bawl\" in this image.",
     "labels": [
       "croquet ball",
       "person",
@@ -498,7 +498,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00004068.JPEG",
-    "prompt": "Detect the object(s) \"axe, person\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"axe, person\" in this image.",
     "labels": [
       "axe",
       "person"
@@ -514,7 +514,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1478898087511960878.jpg",
-    "prompt": "Detect the object(s) \"car, truck\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car, truck\" in this image.",
     "labels": [
       "car",
       "truck"
@@ -530,7 +530,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1478896071431847989.jpg",
-    "prompt": "Note: Image data may contain noise. Detect the object(s) \"cav\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Note: Image data may contain noise. Detect the object(s) \"cav\" in this image.",
     "labels": [
       "cav"
     ],
@@ -545,7 +545,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1478895568695802824.jpg",
-    "prompt": "Detect the object(s) \"car\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car\" in this image.",
     "labels": [
       "car"
     ],
@@ -560,7 +560,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2013_val_00001634.JPEG",
-    "prompt": "Detect the object(s) \"table\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"table\" in this image.",
     "labels": [
       "table"
     ],
@@ -575,7 +575,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00026917.JPEG",
-    "prompt": "Detect the object(s) \"butterfly\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"butterfly\" in this image.",
     "labels": [
       "butterfly"
     ],
@@ -590,7 +590,7 @@
     "scene_type": "single/solo",
     "category": "single/solo",
     "filename": "ILSVRC2012_val_00024314.JPEG",
-    "prompt": "Detect the object(s) \"sneak\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"sneak\" in this image.",
     "labels": [
       "sneak"
     ],
@@ -605,7 +605,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00035101.JPEG",
-    "prompt": "Detect the object(s) \"zebra\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"zebra\" in this image.",
     "labels": [
       "zebra"
     ],
@@ -620,7 +620,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00035612.JPEG",
-    "prompt": "Detect the object(s) \"mokney\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"mokney\" in this image.",
     "labels": [
       "mokney"
     ],
@@ -635,7 +635,7 @@
     "scene_type": "single/multi",
     "category": "single/multi",
     "filename": "ILSVRC2012_val_00035457.JPEG",
-    "prompt": "Detect the object(s) \"cart\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"cart\" in this image.",
     "labels": [
       "cart"
     ],
@@ -650,7 +650,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00035378.JPEG",
-    "prompt": "Detect the object(s) \"bird, dog\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"bird, dog\" in this image.",
     "labels": [
       "bird",
       "dog"
@@ -666,7 +666,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2012_val_00044472.JPEG",
-    "prompt": "Note: Image data may contain noise. Yesterda I went to the park an dsaw a strange bir fflying bbackwards in the rin whilLeeatV a sandwich.... Now, Detect the object(s) \"hat with a wide brim, person\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Note: Image data may contain noise. Yesterda I went to the park an dsaw a strange bir fflying bbackwards in the rin whilLeeatV a sandwich.... Now, Detect the object(s) \"hat with a wide brim, person\" in this image.",
     "labels": [
       "hat with a wide brim",
       "person"
@@ -682,7 +682,7 @@
     "scene_type": "multi",
     "category": "multi",
     "filename": "ILSVRC2013_val_00003860.JPEG",
-    "prompt": "Detect the object(s) \"digital clock, person\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"digital clock, person\" in this image.",
     "labels": [
       "digital clock",
       "person"
@@ -698,7 +698,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1478732233783674595.jpg",
-    "prompt": "Detect the object(s) \"car\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car\" in this image.",
     "labels": [
       "car"
     ],
@@ -713,7 +713,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1479501447174309879.jpg",
-    "prompt": "Detect the object(s) \"car\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car\" in this image.",
     "labels": [
       "car"
     ],
@@ -728,7 +728,7 @@
     "scene_type": "udacity",
     "category": "udacity",
     "filename": "1479500714623724165.jpg",
-    "prompt": "Detect the object(s) \"car\" in this image. Return ONLY a JSON array — no markdown, no commentary. Each element must have exactly two keys: \"label\" (string, one of the requested objects) and \"bbox\" ([x1, y1, x2, y2] bounding box coordinates). Example: [{\"label\": \"cat\", \"bbox\": [10, 20, 150, 200]}, {\"label\": \"dog\", \"bbox\": [300, 50, 480, 400]}]",
+    "prompt": "Detect the object(s) \"car\" in this image.",
     "labels": [
       "car"
     ],
