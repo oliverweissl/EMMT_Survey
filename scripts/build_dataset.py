@@ -42,6 +42,7 @@ def main():
             "category": source.get("category", metadata["scene_type"]),
             "filename": source.get("filename", ""),
             "prompt": vlm["perturbed_prompt"],
+            "clean_prompt": result.get("original_prompt", ""),
             "labels": prompt_objects,
             "adversarial_source": adversarial,
             "clean_source": clean,
@@ -104,6 +105,7 @@ def main():
             "scene_type": case["scene_type"],
             "category": case["category"],
             "filename": case["filename"],
+            "prompt": case["clean_prompt"],
             "image": destination.relative_to(ROOT).as_posix(),
         })
     (DATA / "clean-cases.json").write_text(

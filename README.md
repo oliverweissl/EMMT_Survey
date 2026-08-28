@@ -22,11 +22,15 @@ python3 scripts/build_dataset.py
 
 The script reads `vlm_output.perturbed_prompt` and `vlm_output.prompt_objects`, balances cases by VLM model, modality, and scene type, and regenerates `data/` and `assets/`. The current 144 cases produce 48 regular tasks in each variant.
 
-Two clean images are sampled randomly for each session as attention checks. They require the `unclear_label` rejection reason. Attention results are sent as `response_type: "attention"` rows; the expected and selected values are stored as JSON in `bboxes` because the supplied Sheet schema has no dedicated attention columns.
+Two clean images are sampled randomly for each session as attention checks. They use the normal annotation page and append an instruction requiring `unclear_image`. Attention results are sent as `response_type: "attention"` rows; the expected and selected values are stored as JSON in `bboxes` because the supplied Sheet schema has no dedicated attention columns.
 
 ## Google Sheets
 
 Use the Apps Script endpoint configured in `app.js`. The Sheet should have the supplied headers, including `server_received_at`. Deploy the script as a Web App executing as the owner with access set to anyone, and use the `/exec` URL. The frontend uses a no-CORS POST, so a successful browser request is opaque; verify delivery by checking the Sheet.
+
+If no rows appear, open Apps Script → Executions while submitting a test task. Confirm the deployment is the current version, the URL ends in `/exec`, access is “Anyone”, and the script is bound to the spreadsheet containing the `responses` tab. The browser cannot report Apps Script HTTP errors because of cross-origin restrictions.
+
+The deployment-ready script is also included at `google-apps-script/Code.gs`. After replacing the Apps Script code, deploy a new version. Opening the `/exec` URL in a browser should show `{"ok":true,"service":"bbox-survey"}`; if it does not, the deployment URL or access setting is wrong.
 
 ## GitHub Pages
 

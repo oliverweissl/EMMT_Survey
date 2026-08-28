@@ -17,4 +17,4 @@ button:disabled { cursor: wait; opacity: .5; }
 .controls { margin-top: 14px; }
 .choices label { display: flex; gap: 8px; align-items: center; margin: 10px 0; }
 .message { min-height: 1.5em; margin-top: 12px; }
-.attention-note { border-left: 3px solid #111; padding-left: 12px; }
+.reject-button { margin-left: 0; }
