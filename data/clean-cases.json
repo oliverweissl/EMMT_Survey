@@ -1,0 +1,1298 @@
+[
+  {
+    "case_id": "case_001",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00032560.JPEG",
+    "image": "assets/clean/case_001/clean.JPEG"
+  },
+  {
+    "case_id": "case_002",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00047878.JPEG",
+    "image": "assets/clean/case_002/clean.JPEG"
+  },
+  {
+    "case_id": "case_003",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00006233.JPEG",
+    "image": "assets/clean/case_003/clean.JPEG"
+  },
+  {
+    "case_id": "case_004",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00010994.JPEG",
+    "image": "assets/clean/case_004/clean.JPEG"
+  },
+  {
+    "case_id": "case_005",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00028513.JPEG",
+    "image": "assets/clean/case_005/clean.JPEG"
+  },
+  {
+    "case_id": "case_006",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00031771.JPEG",
+    "image": "assets/clean/case_006/clean.JPEG"
+  },
+  {
+    "case_id": "case_007",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00047845.JPEG",
+    "image": "assets/clean/case_007/clean.JPEG"
+  },
+  {
+    "case_id": "case_008",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00016909.JPEG",
+    "image": "assets/clean/case_008/clean.JPEG"
+  },
+  {
+    "case_id": "case_009",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00043730.JPEG",
+    "image": "assets/clean/case_009/clean.JPEG"
+  },
+  {
+    "case_id": "case_010",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00018599.JPEG",
+    "image": "assets/clean/case_010/clean.JPEG"
+  },
+  {
+    "case_id": "case_011",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00019305.JPEG",
+    "image": "assets/clean/case_011/clean.JPEG"
+  },
+  {
+    "case_id": "case_012",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00041903.JPEG",
+    "image": "assets/clean/case_012/clean.JPEG"
+  },
+  {
+    "case_id": "case_013",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00044520.JPEG",
+    "image": "assets/clean/case_013/clean.JPEG"
+  },
+  {
+    "case_id": "case_014",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00045966.JPEG",
+    "image": "assets/clean/case_014/clean.JPEG"
+  },
+  {
+    "case_id": "case_015",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00042837.JPEG",
+    "image": "assets/clean/case_015/clean.JPEG"
+  },
+  {
+    "case_id": "case_016",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00004401.JPEG",
+    "image": "assets/clean/case_016/clean.JPEG"
+  },
+  {
+    "case_id": "case_017",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00042837.JPEG",
+    "image": "assets/clean/case_017/clean.JPEG"
+  },
+  {
+    "case_id": "case_018",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00035612.JPEG",
+    "image": "assets/clean/case_018/clean.JPEG"
+  },
+  {
+    "case_id": "case_019",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2013_val_00000449.JPEG",
+    "image": "assets/clean/case_019/clean.JPEG"
+  },
+  {
+    "case_id": "case_020",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00003176.JPEG",
+    "image": "assets/clean/case_020/clean.JPEG"
+  },
+  {
+    "case_id": "case_021",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00022857.JPEG",
+    "image": "assets/clean/case_021/clean.JPEG"
+  },
+  {
+    "case_id": "case_022",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00039154.JPEG",
+    "image": "assets/clean/case_022/clean.JPEG"
+  },
+  {
+    "case_id": "case_023",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00012739.JPEG",
+    "image": "assets/clean/case_023/clean.JPEG"
+  },
+  {
+    "case_id": "case_024",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2013_val_00003495.JPEG",
+    "image": "assets/clean/case_024/clean.JPEG"
+  },
+  {
+    "case_id": "case_025",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00048612.JPEG",
+    "image": "assets/clean/case_025/clean.JPEG"
+  },
+  {
+    "case_id": "case_026",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00030479.JPEG",
+    "image": "assets/clean/case_026/clean.JPEG"
+  },
+  {
+    "case_id": "case_027",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00004761.JPEG",
+    "image": "assets/clean/case_027/clean.JPEG"
+  },
+  {
+    "case_id": "case_028",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479501447174309879.jpg",
+    "image": "assets/clean/case_028/clean.JPEG"
+  },
+  {
+    "case_id": "case_029",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479501431172538806.jpg",
+    "image": "assets/clean/case_029/clean.JPEG"
+  },
+  {
+    "case_id": "case_030",
+    "model": "nemotron",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478020860712187115.jpg",
+    "image": "assets/clean/case_030/clean.JPEG"
+  },
+  {
+    "case_id": "case_031",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478896670714322051.jpg",
+    "image": "assets/clean/case_031/clean.JPEG"
+  },
+  {
+    "case_id": "case_032",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478020280197384728.jpg",
+    "image": "assets/clean/case_032/clean.JPEG"
+  },
+  {
+    "case_id": "case_033",
+    "model": "nemotron",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479501447174309879.jpg",
+    "image": "assets/clean/case_033/clean.JPEG"
+  },
+  {
+    "case_id": "case_034",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479500714623724165.jpg",
+    "image": "assets/clean/case_034/clean.JPEG"
+  },
+  {
+    "case_id": "case_035",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479501447174309879.jpg",
+    "image": "assets/clean/case_035/clean.JPEG"
+  },
+  {
+    "case_id": "case_036",
+    "model": "nemotron",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479503322799978016.jpg",
+    "image": "assets/clean/case_036/clean.JPEG"
+  },
+  {
+    "case_id": "case_037",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00031771.JPEG",
+    "image": "assets/clean/case_037/clean.JPEG"
+  },
+  {
+    "case_id": "case_038",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00012307.JPEG",
+    "image": "assets/clean/case_038/clean.JPEG"
+  },
+  {
+    "case_id": "case_039",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00047636.JPEG",
+    "image": "assets/clean/case_039/clean.JPEG"
+  },
+  {
+    "case_id": "case_040",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00043873.JPEG",
+    "image": "assets/clean/case_040/clean.JPEG"
+  },
+  {
+    "case_id": "case_041",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00032258.JPEG",
+    "image": "assets/clean/case_041/clean.JPEG"
+  },
+  {
+    "case_id": "case_042",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00030868.JPEG",
+    "image": "assets/clean/case_042/clean.JPEG"
+  },
+  {
+    "case_id": "case_043",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00014439.JPEG",
+    "image": "assets/clean/case_043/clean.JPEG"
+  },
+  {
+    "case_id": "case_044",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00013465.JPEG",
+    "image": "assets/clean/case_044/clean.JPEG"
+  },
+  {
+    "case_id": "case_045",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00002595.JPEG",
+    "image": "assets/clean/case_045/clean.JPEG"
+  },
+  {
+    "case_id": "case_046",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00029698.JPEG",
+    "image": "assets/clean/case_046/clean.JPEG"
+  },
+  {
+    "case_id": "case_047",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00008726.JPEG",
+    "image": "assets/clean/case_047/clean.JPEG"
+  },
+  {
+    "case_id": "case_048",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00048808.JPEG",
+    "image": "assets/clean/case_048/clean.JPEG"
+  },
+  {
+    "case_id": "case_049",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00039027.JPEG",
+    "image": "assets/clean/case_049/clean.JPEG"
+  },
+  {
+    "case_id": "case_050",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00007527.JPEG",
+    "image": "assets/clean/case_050/clean.JPEG"
+  },
+  {
+    "case_id": "case_051",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2013_val_00000008.JPEG",
+    "image": "assets/clean/case_051/clean.JPEG"
+  },
+  {
+    "case_id": "case_052",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00008877.JPEG",
+    "image": "assets/clean/case_052/clean.JPEG"
+  },
+  {
+    "case_id": "case_053",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00037937.JPEG",
+    "image": "assets/clean/case_053/clean.JPEG"
+  },
+  {
+    "case_id": "case_054",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00039795.JPEG",
+    "image": "assets/clean/case_054/clean.JPEG"
+  },
+  {
+    "case_id": "case_055",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00003176.JPEG",
+    "image": "assets/clean/case_055/clean.JPEG"
+  },
+  {
+    "case_id": "case_056",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00004709.JPEG",
+    "image": "assets/clean/case_056/clean.JPEG"
+  },
+  {
+    "case_id": "case_057",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00028881.JPEG",
+    "image": "assets/clean/case_057/clean.JPEG"
+  },
+  {
+    "case_id": "case_058",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00006695.JPEG",
+    "image": "assets/clean/case_058/clean.JPEG"
+  },
+  {
+    "case_id": "case_059",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00016267.JPEG",
+    "image": "assets/clean/case_059/clean.JPEG"
+  },
+  {
+    "case_id": "case_060",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2013_val_00001603.JPEG",
+    "image": "assets/clean/case_060/clean.JPEG"
+  },
+  {
+    "case_id": "case_061",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00004048.JPEG",
+    "image": "assets/clean/case_061/clean.JPEG"
+  },
+  {
+    "case_id": "case_062",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2013_val_00003860.JPEG",
+    "image": "assets/clean/case_062/clean.JPEG"
+  },
+  {
+    "case_id": "case_063",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00047487.JPEG",
+    "image": "assets/clean/case_063/clean.JPEG"
+  },
+  {
+    "case_id": "case_064",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478896071431847989.jpg",
+    "image": "assets/clean/case_064/clean.JPEG"
+  },
+  {
+    "case_id": "case_065",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478020860712187115.jpg",
+    "image": "assets/clean/case_065/clean.JPEG"
+  },
+  {
+    "case_id": "case_066",
+    "model": "qwen",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478895568695802824.jpg",
+    "image": "assets/clean/case_066/clean.JPEG"
+  },
+  {
+    "case_id": "case_067",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479501447174309879.jpg",
+    "image": "assets/clean/case_067/clean.JPEG"
+  },
+  {
+    "case_id": "case_068",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478898995863305961.jpg",
+    "image": "assets/clean/case_068/clean.JPEG"
+  },
+  {
+    "case_id": "case_069",
+    "model": "qwen",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478896071431847989.jpg",
+    "image": "assets/clean/case_069/clean.JPEG"
+  },
+  {
+    "case_id": "case_070",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478898087511960878.jpg",
+    "image": "assets/clean/case_070/clean.JPEG"
+  },
+  {
+    "case_id": "case_071",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479500715624185918.jpg",
+    "image": "assets/clean/case_071/clean.JPEG"
+  },
+  {
+    "case_id": "case_072",
+    "model": "qwen",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479501431172538806.jpg",
+    "image": "assets/clean/case_072/clean.JPEG"
+  },
+  {
+    "case_id": "case_073",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2013_val_00004426.JPEG",
+    "image": "assets/clean/case_073/clean.JPEG"
+  },
+  {
+    "case_id": "case_074",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00017187.JPEG",
+    "image": "assets/clean/case_074/clean.JPEG"
+  },
+  {
+    "case_id": "case_075",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00006233.JPEG",
+    "image": "assets/clean/case_075/clean.JPEG"
+  },
+  {
+    "case_id": "case_076",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00026917.JPEG",
+    "image": "assets/clean/case_076/clean.JPEG"
+  },
+  {
+    "case_id": "case_077",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2013_val_00004383.JPEG",
+    "image": "assets/clean/case_077/clean.JPEG"
+  },
+  {
+    "case_id": "case_078",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2013_val_00004426.JPEG",
+    "image": "assets/clean/case_078/clean.JPEG"
+  },
+  {
+    "case_id": "case_079",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00043661.JPEG",
+    "image": "assets/clean/case_079/clean.JPEG"
+  },
+  {
+    "case_id": "case_080",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00002595.JPEG",
+    "image": "assets/clean/case_080/clean.JPEG"
+  },
+  {
+    "case_id": "case_081",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00024314.JPEG",
+    "image": "assets/clean/case_081/clean.JPEG"
+  },
+  {
+    "case_id": "case_082",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00018436.JPEG",
+    "image": "assets/clean/case_082/clean.JPEG"
+  },
+  {
+    "case_id": "case_083",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00037816.JPEG",
+    "image": "assets/clean/case_083/clean.JPEG"
+  },
+  {
+    "case_id": "case_084",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00029698.JPEG",
+    "image": "assets/clean/case_084/clean.JPEG"
+  },
+  {
+    "case_id": "case_085",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2013_val_00001740.JPEG",
+    "image": "assets/clean/case_085/clean.JPEG"
+  },
+  {
+    "case_id": "case_086",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00024424.JPEG",
+    "image": "assets/clean/case_086/clean.JPEG"
+  },
+  {
+    "case_id": "case_087",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00002802.JPEG",
+    "image": "assets/clean/case_087/clean.JPEG"
+  },
+  {
+    "case_id": "case_088",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00022295.JPEG",
+    "image": "assets/clean/case_088/clean.JPEG"
+  },
+  {
+    "case_id": "case_089",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2013_val_00003790.JPEG",
+    "image": "assets/clean/case_089/clean.JPEG"
+  },
+  {
+    "case_id": "case_090",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00035151.JPEG",
+    "image": "assets/clean/case_090/clean.JPEG"
+  },
+  {
+    "case_id": "case_091",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2013_val_00002848.JPEG",
+    "image": "assets/clean/case_091/clean.JPEG"
+  },
+  {
+    "case_id": "case_092",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00026051.JPEG",
+    "image": "assets/clean/case_092/clean.JPEG"
+  },
+  {
+    "case_id": "case_093",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00010502.JPEG",
+    "image": "assets/clean/case_093/clean.JPEG"
+  },
+  {
+    "case_id": "case_094",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00042150.JPEG",
+    "image": "assets/clean/case_094/clean.JPEG"
+  },
+  {
+    "case_id": "case_095",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00018814.JPEG",
+    "image": "assets/clean/case_095/clean.JPEG"
+  },
+  {
+    "case_id": "case_096",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00038249.JPEG",
+    "image": "assets/clean/case_096/clean.JPEG"
+  },
+  {
+    "case_id": "case_097",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00004068.JPEG",
+    "image": "assets/clean/case_097/clean.JPEG"
+  },
+  {
+    "case_id": "case_098",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00010502.JPEG",
+    "image": "assets/clean/case_098/clean.JPEG"
+  },
+  {
+    "case_id": "case_099",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00024444.JPEG",
+    "image": "assets/clean/case_099/clean.JPEG"
+  },
+  {
+    "case_id": "case_100",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478898087511960878.jpg",
+    "image": "assets/clean/case_100/clean.JPEG"
+  },
+  {
+    "case_id": "case_101",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478898995863305961.jpg",
+    "image": "assets/clean/case_101/clean.JPEG"
+  },
+  {
+    "case_id": "case_102",
+    "model": "intern",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478896071431847989.jpg",
+    "image": "assets/clean/case_102/clean.JPEG"
+  },
+  {
+    "case_id": "case_103",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478896071431847989.jpg",
+    "image": "assets/clean/case_103/clean.JPEG"
+  },
+  {
+    "case_id": "case_104",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479504312367157311.jpg",
+    "image": "assets/clean/case_104/clean.JPEG"
+  },
+  {
+    "case_id": "case_105",
+    "model": "intern",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478898324025854293.jpg",
+    "image": "assets/clean/case_105/clean.JPEG"
+  },
+  {
+    "case_id": "case_106",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478898087511960878.jpg",
+    "image": "assets/clean/case_106/clean.JPEG"
+  },
+  {
+    "case_id": "case_107",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478898995863305961.jpg",
+    "image": "assets/clean/case_107/clean.JPEG"
+  },
+  {
+    "case_id": "case_108",
+    "model": "intern",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478895568695802824.jpg",
+    "image": "assets/clean/case_108/clean.JPEG"
+  },
+  {
+    "case_id": "case_109",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00001314.JPEG",
+    "image": "assets/clean/case_109/clean.JPEG"
+  },
+  {
+    "case_id": "case_110",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00029161.JPEG",
+    "image": "assets/clean/case_110/clean.JPEG"
+  },
+  {
+    "case_id": "case_111",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2013_val_00001634.JPEG",
+    "image": "assets/clean/case_111/clean.JPEG"
+  },
+  {
+    "case_id": "case_112",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00026917.JPEG",
+    "image": "assets/clean/case_112/clean.JPEG"
+  },
+  {
+    "case_id": "case_113",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00015173.JPEG",
+    "image": "assets/clean/case_113/clean.JPEG"
+  },
+  {
+    "case_id": "case_114",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00039247.JPEG",
+    "image": "assets/clean/case_114/clean.JPEG"
+  },
+  {
+    "case_id": "case_115",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00017504.JPEG",
+    "image": "assets/clean/case_115/clean.JPEG"
+  },
+  {
+    "case_id": "case_116",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00029356.JPEG",
+    "image": "assets/clean/case_116/clean.JPEG"
+  },
+  {
+    "case_id": "case_117",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "single/solo",
+    "category": "single/solo",
+    "filename": "ILSVRC2012_val_00024314.JPEG",
+    "image": "assets/clean/case_117/clean.JPEG"
+  },
+  {
+    "case_id": "case_118",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00035101.JPEG",
+    "image": "assets/clean/case_118/clean.JPEG"
+  },
+  {
+    "case_id": "case_119",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00012301.JPEG",
+    "image": "assets/clean/case_119/clean.JPEG"
+  },
+  {
+    "case_id": "case_120",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00018599.JPEG",
+    "image": "assets/clean/case_120/clean.JPEG"
+  },
+  {
+    "case_id": "case_121",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00042837.JPEG",
+    "image": "assets/clean/case_121/clean.JPEG"
+  },
+  {
+    "case_id": "case_122",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00045966.JPEG",
+    "image": "assets/clean/case_122/clean.JPEG"
+  },
+  {
+    "case_id": "case_123",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00035612.JPEG",
+    "image": "assets/clean/case_123/clean.JPEG"
+  },
+  {
+    "case_id": "case_124",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00041903.JPEG",
+    "image": "assets/clean/case_124/clean.JPEG"
+  },
+  {
+    "case_id": "case_125",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00016527.JPEG",
+    "image": "assets/clean/case_125/clean.JPEG"
+  },
+  {
+    "case_id": "case_126",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "single/multi",
+    "category": "single/multi",
+    "filename": "ILSVRC2012_val_00035457.JPEG",
+    "image": "assets/clean/case_126/clean.JPEG"
+  },
+  {
+    "case_id": "case_127",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00005713.JPEG",
+    "image": "assets/clean/case_127/clean.JPEG"
+  },
+  {
+    "case_id": "case_128",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00035378.JPEG",
+    "image": "assets/clean/case_128/clean.JPEG"
+  },
+  {
+    "case_id": "case_129",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00030479.JPEG",
+    "image": "assets/clean/case_129/clean.JPEG"
+  },
+  {
+    "case_id": "case_130",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00044472.JPEG",
+    "image": "assets/clean/case_130/clean.JPEG"
+  },
+  {
+    "case_id": "case_131",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00042150.JPEG",
+    "image": "assets/clean/case_131/clean.JPEG"
+  },
+  {
+    "case_id": "case_132",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00038720.JPEG",
+    "image": "assets/clean/case_132/clean.JPEG"
+  },
+  {
+    "case_id": "case_133",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2012_val_00015213.JPEG",
+    "image": "assets/clean/case_133/clean.JPEG"
+  },
+  {
+    "case_id": "case_134",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2013_val_00001956.JPEG",
+    "image": "assets/clean/case_134/clean.JPEG"
+  },
+  {
+    "case_id": "case_135",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "multi",
+    "category": "multi",
+    "filename": "ILSVRC2013_val_00003860.JPEG",
+    "image": "assets/clean/case_135/clean.JPEG"
+  },
+  {
+    "case_id": "case_136",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478896071431847989.jpg",
+    "image": "assets/clean/case_136/clean.JPEG"
+  },
+  {
+    "case_id": "case_137",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478732233783674595.jpg",
+    "image": "assets/clean/case_137/clean.JPEG"
+  },
+  {
+    "case_id": "case_138",
+    "model": "kimi",
+    "modality": "image",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478020280197384728.jpg",
+    "image": "assets/clean/case_138/clean.JPEG"
+  },
+  {
+    "case_id": "case_139",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479500700123235425.jpg",
+    "image": "assets/clean/case_139/clean.JPEG"
+  },
+  {
+    "case_id": "case_140",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1478020369195764352.jpg",
+    "image": "assets/clean/case_140/clean.JPEG"
+  },
+  {
+    "case_id": "case_141",
+    "model": "kimi",
+    "modality": "text",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479501447174309879.jpg",
+    "image": "assets/clean/case_141/clean.JPEG"
+  },
+  {
+    "case_id": "case_142",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479501447174309879.jpg",
+    "image": "assets/clean/case_142/clean.JPEG"
+  },
+  {
+    "case_id": "case_143",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479505730961910134.jpg",
+    "image": "assets/clean/case_143/clean.JPEG"
+  },
+  {
+    "case_id": "case_144",
+    "model": "kimi",
+    "modality": "multimodal",
+    "scene_type": "udacity",
+    "category": "udacity",
+    "filename": "1479500714623724165.jpg",
+    "image": "assets/clean/case_144/clean.JPEG"
+  }
+]
