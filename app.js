@@ -63,27 +63,73 @@ function taskHeader(item) { return `<div class="progress">Task ${position + 1} o
 
 function renderAnnotation(item) {
   app.innerHTML = `<section><div>${taskHeader(item)}</div><div class="canvas-wrap"><img id="image" src="${rootPath(item.image)}" alt="Image to annotate"><canvas id="canvas"></canvas></div>
-    <div class="controls"><button id="submit">Submit boxes</button><button class="reject-button" data-reason="unclear_label">Reject: unclear label</button><button class="reject-button" data-reason="unclear_image">Reject: unclear image</button><button class="reject-button" data-reason="other">Reject: other</button><button id="skip">Skip</button></div>
+    <div class="controls"><button id="submit">Submit boxes</button><button id="undo">Undo last box</button><button id="delete-box">Delete selected box</button><button class="reject-button" data-reason="unclear_label">Reject: unclear label</button><button class="reject-button" data-reason="unclear_image">Reject: unclear image</button><button class="reject-button" data-reason="other">Reject: other</button><button id="skip">Skip</button></div>
     <p class="message" id="message"></p></section>`;
   const image = document.querySelector('#image');
   image.onload = () => setupCanvas(image, item);
   document.querySelector('#submit').onclick = () => submitAnnotation(item, 'bbox', '', currentBoxes());
   document.querySelector('#skip').onclick = () => submitAnnotation(item, 'skip', '', []);
+  document.querySelector('#undo').onclick = () => { boxes.pop(); if (selected >= boxes.length) selected = -1; redrawCanvas(); };
+  document.querySelector('#delete-box').onclick = () => { if (selected < 0) return; boxes.splice(selected, 1); selected = -1; redrawCanvas(); };
   document.querySelectorAll('.reject-button').forEach(button => {
     button.onclick = () => submitAnnotation(item, item.attention ? 'attention' : 'reject', button.dataset.reason, []);
   });
 }
 
-let boxes = [], active = null;
+let boxes = [], active = null, selected = -1, redrawCanvas = () => {};
 function setupCanvas(image, item) {
   const canvas = document.querySelector('#canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
   const ctx = canvas.getContext('2d');
-  const redraw = () => { ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.strokeStyle = '#111'; ctx.lineWidth = Math.max(2, canvas.width / 500); boxes.concat(active ? [active] : []).forEach(b => ctx.strokeRect(b.x, b.y, b.w, b.h)); };
+  const handleSize = Math.max(10, canvas.width / 100);
+  const corners = b => [{x:b.x, y:b.y, corner:'tl'}, {x:b.x+b.w, y:b.y, corner:'tr'}, {x:b.x, y:b.y+b.h, corner:'bl'}, {x:b.x+b.w, y:b.y+b.h, corner:'br'}];
+  const redraw = () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.lineWidth = Math.max(2, canvas.width / 500);
+    boxes.forEach((b, i) => {
+      ctx.strokeStyle = i === selected ? '#e11' : '#111';
+      ctx.strokeRect(b.x, b.y, b.w, b.h);
+      if (i === selected) { ctx.fillStyle = '#e11'; corners(b).forEach(c => ctx.fillRect(c.x - handleSize / 2, c.y - handleSize / 2, handleSize, handleSize)); }
+    });
+    if (active) { ctx.strokeStyle = '#111'; ctx.strokeRect(active.x, active.y, active.w, active.h); }
+  };
+  redrawCanvas = redraw;
   const point = event => { const r = canvas.getBoundingClientRect(); return {x:(event.clientX-r.left)*canvas.width/r.width, y:(event.clientY-r.top)*canvas.height/r.height}; };
-  canvas.onpointerdown = e => { canvas.setPointerCapture(e.pointerId); const p = point(e); active = {x:p.x,y:p.y,w:0,h:0}; redraw(); };
-  canvas.onpointermove = e => { if (!active) return; const p = point(e); active.w = p.x-active.x; active.h = p.y-active.y; redraw(); };
-  canvas.onpointerup = () => { if (!active) return; const b = {x:Math.min(active.x,active.x+active.w), y:Math.min(active.y,active.y+active.h), w:Math.abs(active.w), h:Math.abs(active.h)}; if (b.w > 2 && b.h > 2) boxes.push(b); active = null; redraw(); };
-  boxes = []; redraw();
+  const hitHandle = p => { if (selected < 0) return null; const hit = corners(boxes[selected]).find(c => Math.abs(p.x-c.x) <= handleSize && Math.abs(p.y-c.y) <= handleSize); return hit ? hit.corner : null; };
+  const hitBox = p => { for (let i = boxes.length - 1; i >= 0; i--) { const b = boxes[i]; if (p.x >= b.x && p.x <= b.x+b.w && p.y >= b.y && p.y <= b.y+b.h) return i; } return -1; };
+  let dragMode = null, dragCorner = null, dragOrig = null, dragStart = null;
+  const resizeBox = p => {
+    const b = boxes[selected], o = dragOrig;
+    let x1 = o.x, y1 = o.y, x2 = o.x+o.w, y2 = o.y+o.h;
+    if (dragCorner.includes('l')) x1 = p.x; if (dragCorner.includes('r')) x2 = p.x;
+    if (dragCorner.includes('t')) y1 = p.y; if (dragCorner.includes('b')) y2 = p.y;
+    b.x = Math.min(x1, x2); b.y = Math.min(y1, y2); b.w = Math.abs(x2-x1); b.h = Math.abs(y2-y1);
+  };
+  canvas.onpointerdown = e => {
+    canvas.setPointerCapture(e.pointerId);
+    const p = point(e);
+    const handle = hitHandle(p);
+    if (handle) { dragMode = 'resize'; dragCorner = handle; dragOrig = {...boxes[selected]}; redraw(); return; }
+    const idx = hitBox(p);
+    if (idx >= 0) { selected = idx; dragMode = 'move'; dragOrig = {...boxes[idx]}; dragStart = p; redraw(); return; }
+    selected = -1; dragMode = 'draw'; active = {x:p.x,y:p.y,w:0,h:0}; redraw();
+  };
+  canvas.onpointermove = e => {
+    if (!dragMode) return;
+    const p = point(e);
+    if (dragMode === 'draw') { active.w = p.x-active.x; active.h = p.y-active.y; }
+    else if (dragMode === 'move') { const b = boxes[selected]; b.x = dragOrig.x + (p.x-dragStart.x); b.y = dragOrig.y + (p.y-dragStart.y); }
+    else if (dragMode === 'resize') { resizeBox(p); }
+    redraw();
+  };
+  canvas.onpointerup = () => {
+    if (dragMode === 'draw' && active) {
+      const b = {x:Math.min(active.x,active.x+active.w), y:Math.min(active.y,active.y+active.h), w:Math.abs(active.w), h:Math.abs(active.h)};
+      if (b.w > 2 && b.h > 2) { boxes.push(b); selected = boxes.length - 1; }
+      active = null;
+    }
+    dragMode = null; dragCorner = null; redraw();
+  };
+  boxes = []; selected = -1; redraw();
 }
 function currentBoxes() { return boxes.map(b => [Math.round(b.x), Math.round(b.y), Math.round(b.x+b.w), Math.round(b.y+b.h)]); }
 async function submitAnnotation(item, type, reason, taskBoxes) {
@@ -91,7 +137,7 @@ async function submitAnnotation(item, type, reason, taskBoxes) {
   document.querySelectorAll('button').forEach(b => b.disabled = true);
   const payload = {...basePayload(item, position), response_type:type, reject_reason:reason, bboxes:JSON.stringify(item.attention ? {expected:'unclear_image', selected:reason, correct:reason === 'unclear_image'} : taskBoxes), num_bboxes:taskBoxes.length, image_width:document.querySelector('#image').naturalWidth, image_height:document.querySelector('#image').naturalHeight};
   pendingResponses.push(payload);
-  position++; boxes = []; showCurrent();
+  position++; boxes = []; selected = -1; showCurrent();
 }
 
 async function finish() {
