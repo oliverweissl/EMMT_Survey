@@ -67,14 +67,22 @@ function renderAnnotation(item) {
     <p class="message" id="message"></p></section>`;
   const image = document.querySelector('#image');
   image.onload = () => setupCanvas(image, item);
-  document.querySelector('#submit').onclick = () => submitAnnotation(item, 'bbox', '', currentBoxes());
+  document.querySelector('#submit').onclick = () => {
+    const taskBoxes = currentBoxes();
+    if (taskBoxes.length === 0 && !confirmedNoBoxes) {
+      confirmedNoBoxes = true;
+      document.querySelector('#message').textContent = 'No boxes drawn. Click "Submit boxes" again to submit without any boxes.';
+      return;
+    }
+    submitAnnotation(item, 'bbox', '', taskBoxes);
+  };
   document.querySelector('#skip').onclick = () => submitAnnotation(item, 'skip', '', []);
   document.querySelectorAll('.reject-button').forEach(button => {
     button.onclick = () => submitAnnotation(item, item.attention ? 'attention' : 'reject', button.dataset.reason, []);
   });
 }
 
-let boxes = [], active = null, selected = -1, redrawCanvas = () => {};
+let boxes = [], active = null, selected = -1, redrawCanvas = () => {}, confirmedNoBoxes = false;
 function setupCanvas(image, item) {
   const canvas = document.querySelector('#canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
   const ctx = canvas.getContext('2d');
@@ -139,7 +147,7 @@ function setupCanvas(image, item) {
     }
     dragMode = null; dragCorner = null; redraw();
   };
-  boxes = []; selected = -1; redraw();
+  boxes = []; selected = -1; confirmedNoBoxes = false; redraw();
 }
 function currentBoxes() { return boxes.map(b => [Math.round(b.x), Math.round(b.y), Math.round(b.x+b.w), Math.round(b.y+b.h)]); }
 async function submitAnnotation(item, type, reason, taskBoxes) {
