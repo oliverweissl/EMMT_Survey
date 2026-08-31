@@ -63,14 +63,12 @@ function taskHeader(item) { return `<div class="progress">Task ${position + 1} o
 
 function renderAnnotation(item) {
   app.innerHTML = `<section><div>${taskHeader(item)}</div><div class="canvas-wrap"><img id="image" src="${rootPath(item.image)}" alt="Image to annotate"><canvas id="canvas"></canvas></div>
-    <div class="controls"><button id="submit">Submit boxes</button><button id="undo">Undo last box</button><button id="delete-box">Delete selected box</button><button class="reject-button" data-reason="unclear_label">Reject: unclear label</button><button class="reject-button" data-reason="unclear_image">Reject: unclear image</button><button class="reject-button" data-reason="other">Reject: other</button><button id="skip">Skip</button></div>
+    <div class="controls"><button id="submit">Submit boxes</button><button class="reject-button" data-reason="unclear_label">Reject: unclear label</button><button class="reject-button" data-reason="unclear_image">Reject: unclear image</button><button class="reject-button" data-reason="other">Reject: other</button><button id="skip">Skip</button></div>
     <p class="message" id="message"></p></section>`;
   const image = document.querySelector('#image');
   image.onload = () => setupCanvas(image, item);
   document.querySelector('#submit').onclick = () => submitAnnotation(item, 'bbox', '', currentBoxes());
   document.querySelector('#skip').onclick = () => submitAnnotation(item, 'skip', '', []);
-  document.querySelector('#undo').onclick = () => { boxes.pop(); if (selected >= boxes.length) selected = -1; redrawCanvas(); };
-  document.querySelector('#delete-box').onclick = () => { if (selected < 0) return; boxes.splice(selected, 1); selected = -1; redrawCanvas(); };
   document.querySelectorAll('.reject-button').forEach(button => {
     button.onclick = () => submitAnnotation(item, item.attention ? 'attention' : 'reject', button.dataset.reason, []);
   });
@@ -81,19 +79,30 @@ function setupCanvas(image, item) {
   const canvas = document.querySelector('#canvas'); canvas.width = image.naturalWidth; canvas.height = image.naturalHeight;
   const ctx = canvas.getContext('2d');
   const handleSize = Math.max(10, canvas.width / 100);
+  const deleteSize = handleSize * 1.6;
   const corners = b => [{x:b.x, y:b.y, corner:'tl'}, {x:b.x+b.w, y:b.y, corner:'tr'}, {x:b.x, y:b.y+b.h, corner:'bl'}, {x:b.x+b.w, y:b.y+b.h, corner:'br'}];
+  const deletePos = b => ({x: b.x+b.w+deleteSize/2, y: b.y-deleteSize/2});
   const redraw = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.lineWidth = Math.max(2, canvas.width / 500);
     boxes.forEach((b, i) => {
-      ctx.strokeStyle = i === selected ? '#e11' : '#111';
+      ctx.strokeStyle = i === selected ? '#e11' : '#39ff14';
       ctx.strokeRect(b.x, b.y, b.w, b.h);
-      if (i === selected) { ctx.fillStyle = '#e11'; corners(b).forEach(c => ctx.fillRect(c.x - handleSize / 2, c.y - handleSize / 2, handleSize, handleSize)); }
+      if (i === selected) {
+        ctx.fillStyle = '#e11';
+        corners(b).forEach(c => ctx.fillRect(c.x - handleSize / 2, c.y - handleSize / 2, handleSize, handleSize));
+        const d = deletePos(b);
+        ctx.beginPath(); ctx.arc(d.x, d.y, deleteSize / 2, 0, Math.PI * 2); ctx.fill();
+        ctx.strokeStyle = '#fff'; ctx.lineWidth = Math.max(1.5, deleteSize / 8);
+        ctx.beginPath(); ctx.moveTo(d.x-deleteSize/4, d.y-deleteSize/4); ctx.lineTo(d.x+deleteSize/4, d.y+deleteSize/4);
+        ctx.moveTo(d.x+deleteSize/4, d.y-deleteSize/4); ctx.lineTo(d.x-deleteSize/4, d.y+deleteSize/4); ctx.stroke();
+      }
     });
-    if (active) { ctx.strokeStyle = '#111'; ctx.strokeRect(active.x, active.y, active.w, active.h); }
+    if (active) { ctx.strokeStyle = '#39ff14'; ctx.strokeRect(active.x, active.y, active.w, active.h); }
   };
   redrawCanvas = redraw;
   const point = event => { const r = canvas.getBoundingClientRect(); return {x:(event.clientX-r.left)*canvas.width/r.width, y:(event.clientY-r.top)*canvas.height/r.height}; };
+  const hitDelete = p => { if (selected < 0) return false; const d = deletePos(boxes[selected]); return Math.hypot(p.x-d.x, p.y-d.y) <= deleteSize / 2; };
   const hitHandle = p => { if (selected < 0) return null; const hit = corners(boxes[selected]).find(c => Math.abs(p.x-c.x) <= handleSize && Math.abs(p.y-c.y) <= handleSize); return hit ? hit.corner : null; };
   const hitBox = p => { for (let i = boxes.length - 1; i >= 0; i--) { const b = boxes[i]; if (p.x >= b.x && p.x <= b.x+b.w && p.y >= b.y && p.y <= b.y+b.h) return i; } return -1; };
   let dragMode = null, dragCorner = null, dragOrig = null, dragStart = null;
@@ -107,6 +116,7 @@ function setupCanvas(image, item) {
   canvas.onpointerdown = e => {
     canvas.setPointerCapture(e.pointerId);
     const p = point(e);
+    if (hitDelete(p)) { boxes.splice(selected, 1); selected = -1; redraw(); return; }
     const handle = hitHandle(p);
     if (handle) { dragMode = 'resize'; dragCorner = handle; dragOrig = {...boxes[selected]}; redraw(); return; }
     const idx = hitBox(p);
