@@ -147,7 +147,7 @@ async function finish() {
     await send({batch: true, responses: pendingResponses});
     uploadComplete = true;
     document.title = 'Image annotation study';
-    app.innerHTML = '<section class="end"><h1>Thank you</h1><p>Your responses have been recorded.</p></section>';
+    app.innerHTML = `<section class="end"><h1>Thank you</h1><p>Your responses have been recorded.</p><p>Enter this completion code on MTurk: <strong>${esc(sessionId)}</strong></p></section>`;
   } catch (error) {
     app.innerHTML = '<section class="end"><h1>Submission problem</h1><p>Your responses could not be sent. Please keep this page open and try again.</p><button id="retry">Retry submission</button><p class="message" id="message"></p></section>';
     document.querySelector('#retry').onclick = finish;
